@@ -15,7 +15,6 @@ This project is a simple To-Do application consisting of a backend built with PH
   - [Technologies](#technologies-1)
   - [Installation & Setup](#installation--setup-1)
 - [Usage](#usage)
-- [Screenshots](#screenshots)
 - [License](#license)
 
 ---
@@ -71,8 +70,6 @@ The backend exposes the following REST API endpoints (examples):
 
 - `GET /tasks` — Get all tasks
 - `POST /tasks` — Add a new task
-- `PUT /tasks/{id}` — Update a task
-- `DELETE /tasks/{id}` — Delete a task
 
 All endpoints return JSON responses.
 
@@ -83,8 +80,8 @@ All endpoints return JSON responses.
 ### Technologies
 
 - **Vite** (development server & build tool)
-- **JavaScript** (or TypeScript)
-- **HTML/CSS**
+- **Typescript**
+- **TailwindCSS**
 
 ### Installation & Setup
 
