@@ -1,118 +1,124 @@
 # To-Do App
 
-This project is a simple To-Do application consisting of a backend built with PHP, MySQL (using XAMPP), and a frontend developed using Vite, running on [http://localhost:5173/](http://localhost:5173/).
+A full-stack To-Do application built to help users efficiently organize and manage daily tasks. The project consists of a **backend** (PHP, MySQL, XAMPP) and a **frontend** (React, TypeScript, Vite, TailwindCSS). This repository contains both the frontend and backend codebases, making it easy to set up and run the entire application locally.
 
 ---
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Backend](#backend)
-  - [Technologies](#technologies)
-  - [Installation & Setup](#installation--setup)
-  - [API Endpoints](#api-endpoints)
+- [Project Overview](#project-overview)
+- [Architecture](#architecture)
 - [Frontend](#frontend)
-  - [Technologies](#technologies-1)
-  - [Installation & Setup](#installation--setup-1)
-- [Usage](#usage)
+  - [Tech Stack](#frontend-tech-stack)
+  - [Features](#frontend-features)
+  - [Getting Started](#frontend-getting-started)
+- [Backend](#backend)
+  - [Tech Stack](#backend-tech-stack)
+  - [Features](#backend-features)
+  - [Getting Started](#backend-getting-started)
+- [Branches](#branches)
 - [License](#license)
 
 ---
 
-## Overview
+## Project Overview
 
-The To-Do App allows users to manage their daily tasks efficiently. Users can add, edit, delete, and mark tasks as completed. The backend provides a RESTful API for managing tasks, while the frontend offers a fast and interactive user interface.
+The To-Do App allows users to:
+- Create, view, edit, and delete tasks.
+- Organize tasks efficiently with a responsive and user-friendly interface.
+- Persist data using a MySQL database managed via a PHP backend.
+
+The project is divided into two main parts:
+- **Frontend:** Provides the user interface and communicates with the backend API.
+- **Backend:** Handles business logic, data storage, and exposes a RESTful API.
 
 ---
 
-## Backend
+## Architecture
 
-### Technologies
+```
+[Frontend: React + Vite + TailwindCSS + TypeScript]
+             |
+             v
+   [Backend: PHP + MySQL (via XAMPP)]
+```
 
-- **PHP** (server-side scripting)
-- **MySQL** (database)
-- **XAMPP** (local server environment)
-
-### Installation & Setup
-
-1. **Install XAMPP**  
-   Download and install XAMPP from [https://www.apachefriends.org/](https://www.apachefriends.org/).
-
-2. **Start Apache and MySQL**  
-   Open XAMPP Control Panel and ensure both Apache and MySQL are running.
-
-3. **Clone the Repository**  
-   ```bash
-   git clone https://github.com/konradxmalinowski/to-do-app.git
-   ```
-
-4. **Set up the backend files**  
-   Copy the backend folder (e.g., `backend` or `api`) into your XAMPP `htdocs` directory.
-
-5. **Database Setup**
-   - Open phpMyAdmin (`http://localhost/phpmyadmin/`).
-   - Create a new database (e.g., `todo_app`).
-   - Import the provided SQL file (`database.sql` or similar) to create the necessary tables.
-
-6. **Configure Database Connection**
-   - Edit the PHP configuration file (e.g., `config.php`) and set your database credentials.
-
-   ```php
-   $servername = "localhost";
-   $username = "root";
-   $password = "";
-   $dbname = "todo_app";
-   ```
-
-### API Endpoints
-
-The backend exposes the following REST API endpoints (examples):
-
-- `GET /tasks` — Get all tasks
-- `POST /tasks` — Add a new task
-
-All endpoints return JSON responses.
+- The frontend communicates with the backend using HTTP requests (typically via Fetch or Axios).
+- The backend processes requests, interacts with the MySQL database, and returns responses to the frontend.
 
 ---
 
 ## Frontend
 
-### Technologies
+### Frontend Tech Stack
 
-- **Vite** (development server & build tool)
-- **Typescript**
-- **TailwindCSS**
+- **React** – For building reusable UI components.
+- **TypeScript** – Strong typing for improved reliability and maintainability.
+- **Vite** – Fast development environment and build tool.
+- **TailwindCSS** – Utility-first CSS framework for rapid UI development.
 
-### Installation & Setup
+### Frontend Features
 
-1. **Navigate to the frontend directory**
-   ```bash
-   cd to-do-app/frontend
-   ```
+- Modern, responsive user interface.
+- Add, edit, delete, and mark tasks as completed.
+- Real-time updates of task lists.
+- Communicates with backend via REST API.
+- Error handling and loading indicators.
+- Type-safe codebase with clear file structure.
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+### Frontend Getting Started
 
-3. **Start the development server**
-   ```bash
-   npm run dev
-   ```
-   The app will be running at [http://localhost:5173/](http://localhost:5173/).
+1. **Install dependencies:**
+    ```bash
+    cd frontend
+    npm install
+    ```
 
-4. **Configuration**
+2. **Configure API endpoint:**
+   - Update the API URL in your environment or configuration file to point to your backend server.
 
-   The frontend is set up to communicate with the backend API (PHP server) running on XAMPP. Ensure any API URLs in your frontend configuration point to the correct backend address (e.g., `http://localhost/todo-app/backend/api.php`).
+3. **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+
+4. Access the frontend at [http://localhost:5173](http://localhost:5173) (default Vite port).
 
 ---
 
-## Usage
+## Backend
 
-1. Ensure XAMPP (Apache & MySQL) is running and the backend is accessible.
-2. Start the Vite frontend server.
-3. Open [http://localhost:5173/](http://localhost:5173/) in your browser.
-4. Manage your to-do tasks using the intuitive UI.
+### Backend Tech Stack
+
+- **PHP** – Server-side scripting language.
+- **MySQL** – Relational database for storing tasks and users.
+- **XAMPP** – Local development environment (Apache, MySQL, PHP, Perl).
+
+### Backend Features
+
+- RESTful API for CRUD operations on tasks.
+- Secure database connections.
+- Input validation and error handling.
+- Easily extensible for user authentication or additional features.
+
+### Backend Getting Started
+
+1. **Set up XAMPP:**
+   - Download and install XAMPP from [https://www.apachefriends.org/](https://www.apachefriends.org/).
+   - Start Apache and MySQL via the XAMPP control panel.
+
+2. **Database setup:**
+   - Import the provided SQL file (if available) to create the `to_do_app` database and tables:
+     1. Open phpMyAdmin (`http://localhost/phpmyadmin`).
+     2. Create a new database, e.g., `to_do_app`.
+     3. Import the SQL script.
+
+3. **Configure database credentials in PHP backend code.**
+
+4. **Run the backend:**
+   - Place backend files in the `htdocs` directory of XAMPP.
+   - Access the backend API via [http://localhost/to-do-app/backend](http://localhost/Todo%20app%20(database)/backend)](http://localhost/Todo%20app%20(database)/backend).
+
 
 ---
 
