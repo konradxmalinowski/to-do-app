@@ -16,7 +16,6 @@ A full-stack To-Do application built to help users efficiently organize and mana
   - [Tech Stack](#backend-tech-stack)
   - [Features](#backend-features)
   - [Getting Started](#backend-getting-started)
-- [License](#license)
 
 
 
