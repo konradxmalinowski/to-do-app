@@ -2,7 +2,7 @@
 
 A full-stack To-Do application built to help users efficiently organize and manage daily tasks. The project consists of a **backend** (PHP, MySQL, XAMPP) and a **frontend** (React, TypeScript, Vite, TailwindCSS). This repository contains both the frontend and backend codebases, making it easy to set up and run the entire application locally.
 
-
+<br>
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@ A full-stack To-Do application built to help users efficiently organize and mana
   - [Features](#backend-features)
   - [Getting Started](#backend-getting-started)
 
-
+<br>
 
 ## Project Overview
 
@@ -30,7 +30,7 @@ The project is divided into two main parts:
 - **Frontend:** Provides the user interface and communicates with the backend API.
 - **Backend:** Handles business logic, data storage, and exposes a RESTful API.
 
-
+<br>
 
 ## Architecture
 
@@ -44,7 +44,7 @@ The project is divided into two main parts:
 - The frontend communicates with the backend using HTTP requests (typically via Fetch or Axios).
 - The backend processes requests, interacts with the MySQL database, and returns responses to the frontend.
 
-
+<br>
 
 ## Frontend
 
@@ -82,7 +82,7 @@ The project is divided into two main parts:
 
 4. Access the frontend at [http://localhost:5173](http://localhost:5173) (default Vite port).
 
-
+<br>
 
 ## Backend
 
@@ -117,4 +117,16 @@ The project is divided into two main parts:
    - Place backend files in the `htdocs` directory of XAMPP.
    - Access the backend API via [http://localhost/to-do-app/backend](http://localhost/Todo%20app%20(database)/backend)](http://localhost/Todo%20app%20(database)/backend).
 
+<br>
+
+## Screenshots
+![image](https://github.com/user-attachments/assets/b79c12a2-8b7d-4d9e-a4e8-6e9734a6adae)
+
+<br>
+
+<br>
+
+## Contact
+
+For any inquiries or feedback: [malinowski.konrad45@gmail.com](mailto:malinowski.konrad45@gmail.com)
 
