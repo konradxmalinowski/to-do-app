@@ -1,6 +1,6 @@
 # To-Do App
 
-A full-stack To-Do application built to help users efficiently organize and manage daily tasks. The project consists of a **backend** (PHP, MySQL, XAMPP) and a **frontend** (React, TypeScript, Vite, TailwindCSS). This repository contains both the frontend and backend codebases, making it easy to set up and run the entire application locally.
+A full-stack To-Do application built to help users efficiently organize and manage daily tasks. The project consists of a **backend** (PHP, MySQL, XAMPP) and a **frontend** (React, TypeScript, JavaScript, Vite, TailwindCSS). This repository contains both the frontend and backend codebases, making it easy to set up and run the entire application locally.
 
 <br>
 
